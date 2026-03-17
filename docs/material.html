@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Материалы | Поиск аномалий во временных рядах | ПаВТ-2026</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="conference-badge">
+                🏆 ПаВТ-2026
+            </div>
+            <h1>🔍 Высокопроизводительный поиск аномалий во временных рядах</h1>
+        </header>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">📋 О мастер-классе</a>
+            <a href="speakers.html" class="nav-item">👥 Докладчики</a>
+            <a href="program.html" class="nav-item">📅 Программа</a>
+            <a href="materials.html" class="nav-item active">📚 Материалы</a>
+            <a href="solution.html" class="nav-item">💡 Готовое решение</a>
+        </nav>
+
+        <main class="content">
+            <h1>📚 Материалы мастер-класса</h1>
+            
+            <div class="materials-grid">
+                <div class="material-card">
+                    <div class="material-icon">📓</div>
+                    <div class="material-title">Ноутбук с заданиями</div>
+                    <div class="material-size">2.5 MB</div>
+                    <a href="assets/files/student.ipynb" class="btn btn-primary" download>⬇️ Скачать</a>
+                    <a href="https://colab.research.google.com/github/username/repo/blob/main/student.ipynb" class="btn btn-colab" style="margin-top: 5px;">🚀 Colab</a>
+                </div>
+                
+                <div class="material-card">
+                    <div class="material-icon">✅</div>
+                    <div class="material-title">Готовое решение</div>
+                    <div class="material-size">3.1 MB</div>
+                    <a href="assets/files/solved.ipynb" class="btn btn-primary" download>⬇️ Скачать</a>
+                    <a href="https://colab.research.google.com/github/username/repo/blob/main/solved.ipynb" class="btn btn-colab" style="margin-top: 5px;">🚀 Colab</a>
+                </div>
+                
+                <div class="material-card">
+                    <div class="material-icon">📦</div>
+                    <div class="material-title">Модули Python</div>
+                    <div class="material-size">1.2 MB</div>
+                    <a href="assets/files/modules.zip" class="btn btn-primary" download>⬇️ Скачать ZIP</a>
+                </div>
+                
+                <div class="material-card">
+                    <div class="material-icon">📊</div>
+                    <div class="material-title">Данные NYC Taxi</div>
+                    <div class="material-size">4.8 MB</div>
+                    <a href="assets/files/nyc_taxi.csv" class="btn btn-primary" download>⬇️ Скачать CSV</a>
+                </div>
+                
+                <div class="material-card">
+                    <div class="material-icon">📽️</div>
+                    <div class="material-title">Презентация</div>
+                    <div class="material-size">5.2 MB</div>
+                    <a href="assets/files/slides.pdf" class="btn btn-primary" download>⬇️ Скачать PDF</a>
+                </div>
+            </div>
+            
+            <h2 style="margin-top: 40px;">🔗 Быстрые ссылки</h2>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap; margin: 20px 0;">
+                <a href="https://github.com/username/repo" class="btn btn-primary">📦 GitHub репозиторий</a>
+                <a href="https://nbviewer.org/github/username/repo/blob/main/solved.ipynb" class="btn btn-info">📓 Просмотр решения на nbviewer</a>
+            </div>
+            
+            <div class="info-box">
+                <h3 style="margin-bottom: 15px;">🔧 Инструкция по работе с GPU в Colab</h3>
+                <ol style="margin-left: 20px;">
+                    <li>Откройте ноутбук в Google Colab (кнопка "🚀 Colab" выше)</li>
+                    <li>В меню выберите "Runtime" → "Change runtime type"</li>
+                    <li>В поле "Hardware accelerator" выберите "GPU"</li>
+                    <li>Нажмите "Save"</li>
+                    <li>Теперь алгоритмы PD3 и PALMAD будут работать на GPU</li>
+                </ol>
+            </div>
+            
+            <div class="warning-box">
+                <h3 style="margin-bottom: 15px;">📌 Структура репозитория</h3>
+                <pre style="background: #2d2d2d; color: #f8f8f2; padding: 15px; border-radius: 5px;">
+pavt-tutorial-2026/
+├── student.ipynb          # Ноутбук с заданиями
+├── solved.ipynb           # Готовое решение
+├── modules/               # Python модули
+│   ├── drag.py
+│   ├── pd3.py
+│   ├── merlin.py
+│   └── palmad.py
+└── data/
+    └── nyc_taxi.csv       # Данные
+                </pre>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026, Мастер-класс на конференции «Параллельные вычислительные технологии» (ПаВТ-2026)</p>
+        </footer>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
