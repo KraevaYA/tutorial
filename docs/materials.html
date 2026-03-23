@@ -7,103 +7,346 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="conference-badge">
-                🏆 ПаВТ-2026
-            </div>
-            <h1>🔍 Высокопроизводительный поиск аномалий во временных рядах</h1>
-        </header>
 
+    <!-- Шапка -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-text">
+            <h1>Параллельные алгоритмы поиска аномалий во&nbsp;временных рядах</h1>
+            <div class="subtitle" style="font-size: 1.3em; color: #666;">
+                Тьюториал на всероссийской научной конференции с международным участием <br> «Параллельные вычислительные технологии (ПаВТ) 2026»
+            </div>    
+        </div>
+    </header>
+
+    <!-- Навигация -->
+    <div class="nav-wrapper">
         <nav class="nav-menu">
-            <a href="index.html" class="nav-item">📋 О мастер-классе</a>
-            <a href="speakers.html" class="nav-item">👥 Докладчики</a>
-            <a href="program.html" class="nav-item">📅 Программа</a>
-            <a href="materials.html" class="nav-item active">📚 Материалы</a>
-            <a href="solution.html" class="nav-item">💡 Готовое решение</a>
+            <a href="index.html" class="nav-item">О тьюториале</a>
+                <a href="speakers.html" class="nav-item">Авторы</a>
+                <a href="program.html" class="nav-item">Программа</a>
+                <a href="materials.html" class="nav-item active">Материалы</a>
+                <a href="solution.html" class="nav-item">Готовое решение</a>
+            </nav>
         </nav>
-
-        <main class="content">
-            <h1>📚 Материалы мастер-класса</h1>
-            
-            <div class="materials-grid">
-                <div class="material-card">
-                    <div class="material-icon">📓</div>
-                    <div class="material-title">Ноутбук с заданиями</div>
-                    <div class="material-size">2.5 MB</div>
-                    <a href="assets/files/student.ipynb" class="btn btn-primary" download>⬇️ Скачать</a>
-                    <a href="https://colab.research.google.com/github/username/repo/blob/main/student.ipynb" class="btn btn-colab" style="margin-top: 5px;">🚀 Colab</a>
-                </div>
-                
-                <div class="material-card">
-                    <div class="material-icon">✅</div>
-                    <div class="material-title">Готовое решение</div>
-                    <div class="material-size">3.1 MB</div>
-                    <a href="assets/files/solved.ipynb" class="btn btn-primary" download>⬇️ Скачать</a>
-                    <a href="https://colab.research.google.com/github/username/repo/blob/main/solved.ipynb" class="btn btn-colab" style="margin-top: 5px;">🚀 Colab</a>
-                </div>
-                
-                <div class="material-card">
-                    <div class="material-icon">📦</div>
-                    <div class="material-title">Модули Python</div>
-                    <div class="material-size">1.2 MB</div>
-                    <a href="assets/files/modules.zip" class="btn btn-primary" download>⬇️ Скачать ZIP</a>
-                </div>
-                
-                <div class="material-card">
-                    <div class="material-icon">📊</div>
-                    <div class="material-title">Данные NYC Taxi</div>
-                    <div class="material-size">4.8 MB</div>
-                    <a href="assets/files/nyc_taxi.csv" class="btn btn-primary" download>⬇️ Скачать CSV</a>
-                </div>
-                
-                <div class="material-card">
-                    <div class="material-icon">📽️</div>
-                    <div class="material-title">Презентация</div>
-                    <div class="material-size">5.2 MB</div>
-                    <a href="assets/files/slides.pdf" class="btn btn-primary" download>⬇️ Скачать PDF</a>
-                </div>
-            </div>
-            
-            <h2 style="margin-top: 40px;">🔗 Быстрые ссылки</h2>
-            <div style="display: flex; gap: 15px; flex-wrap: wrap; margin: 20px 0;">
-                <a href="https://github.com/username/repo" class="btn btn-primary">📦 GitHub репозиторий</a>
-                <a href="https://nbviewer.org/github/username/repo/blob/main/solved.ipynb" class="btn btn-info">📓 Просмотр решения на nbviewer</a>
-            </div>
-            
-            <div class="info-box">
-                <h3 style="margin-bottom: 15px;">🔧 Инструкция по работе с GPU в Colab</h3>
-                <ol style="margin-left: 20px;">
-                    <li>Откройте ноутбук в Google Colab (кнопка "🚀 Colab" выше)</li>
-                    <li>В меню выберите "Runtime" → "Change runtime type"</li>
-                    <li>В поле "Hardware accelerator" выберите "GPU"</li>
-                    <li>Нажмите "Save"</li>
-                    <li>Теперь алгоритмы PD3 и PALMAD будут работать на GPU</li>
-                </ol>
-            </div>
-            
-            <div class="warning-box">
-                <h3 style="margin-bottom: 15px;">📌 Структура репозитория</h3>
-                <pre style="background: #2d2d2d; color: #f8f8f2; padding: 15px; border-radius: 5px;">
-pavt-tutorial-2026/
-├── student.ipynb          # Ноутбук с заданиями
-├── solved.ipynb           # Готовое решение
-├── modules/               # Python модули
-│   ├── drag.py
-│   ├── pd3.py
-│   ├── merlin.py
-│   └── palmad.py
-└── data/
-    └── nyc_taxi.csv       # Данные
-                </pre>
-            </div>
-        </main>
-
-        <footer class="footer">
-            <p>© 2026, Мастер-класс на конференции «Параллельные вычислительные технологии» (ПаВТ-2026)</p>
-        </footer>
     </div>
+
+    <main class="main-content">
+        <div class="content">
+            <h1 class="page-title">Материалы тьюториала</h1>
+            
+            <!-- Введение со списком -->
+            <h2 style="font-weight: 600;">Структура материалов</h2>
+            <p class="intro-text">Для выполнения практических заданий подготовлен комплект материалов, включающий в себя:</p>
+            <div style="background: #ffffff; border-left: 3px solid #0066cc; padding: 0px 20px; border-radius: 0 6px 6px 0; margin-bottom: 24px;">
+        
+                <div style="margin-bottom: 16px;">
+                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                        <span style="font-size: 1em;">📄️</span>
+                        <span style="font-weight: 500;">Слайды</span>
+                    </div>
+                    <p style="color: #666; font-size: 0.9em; margin: 0 0 0 25px;">
+                        Презентация, содержащая теоретический материал по всем трем частям тьюториала.
+                    </p>
+                </div>
+                
+                <div style="margin-bottom: 16px;">
+                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                        <span style="font-size: 1em;">📓</span>
+                        <span style="font-weight: 500;">Jupyter-ноутбук с заданиями</span>
+                    </div>
+                    <p style="color: #666; font-size: 0.9em; margin: 0 0 0 25px;">
+                        Основной файл для самостоятельной работы, содержащий задания. Задания размечены маркерами <code># INSERT YOUR CODE</code>, которые требуется заполнить в ходе работы. Ноутбук сопровождается подробными комментариями и инструкциями.
+                    </p>
+                </div>
+                
+                <div style="margin-bottom: 16px;">
+                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                        <span style="font-size: 1em;">🐍</span>
+                        <span style="font-weight: 500;">Модули с реализациями алгоритмов</span>
+                    </div>
+                    <p style="color: #666; font-size: 0.9em; margin: 0 0 0 25px;">
+                        Набор Python-модулей, реализующих рассматриваемые алгоритмы поиска диссонансов во временных рядах и вспомогательные функции.
+                    </p>
+                </div>
+                
+                <div style="margin-bottom: 16px;">
+                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                        <span style="font-size: 1em;">📊</span>
+                        <span style="font-weight: 500;">Наборы данных</span>
+                    </div>
+                    <div style="color: #666; font-size: 0.9em; margin: 0 0 0 40px;">
+                        <ul>
+                            <li>NYC Taxi, содержащий среднечасовое количество пассажировов такси в течение 75 дней осенью 2014 года;</li>
+                            <li>SKAB (Skoltech Anomaly Benchmark), содержащий показания различных датчиков промышленного оборудования.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div>
+                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                        <span style="font-size: 1em;">📋</span>
+                        <span style="font-weight: 500;">Файл конфигурации среды выполнения</span>
+                    </div>
+                </div>
+            </div>
+        
+
+            <!-- Доступ к материалам -->
+            <h2 style="margin-top: 40px;">Доступ к материалам</h2>
+
+            <p style="color: #444; margin-bottom: 24px;">Все материалы опубликованы в открытом репозитории на GitHub, предназначенном для клонирования, создания копии (fork) или просмотра файлов, а также доступны для скачивания непосредственно со страницы сайта.</p>
+
+            <div class="access-section">
+                <!-- GitHub -->
+                <div class="access-card">
+                    <div class="access-card-content">
+                        <div class="access-card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="#24292e">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.604-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </div>
+                        <div class="access-card-text">
+                            <div class="access-card-title">Репозиторий на GitHub</div>
+                            <div class="access-card-desc">github.com/username/pavt-tutorial-2026</div>
+                        </div>
+                    </div>
+                    <a href="https://github.com/username/pavt-tutorial-2026" class="btn-github">Открыть репозиторий <span>⟶</span></a>
+                </div>
+
+                <!-- Прямое скачивание -->
+                <div class="download-group">
+                    <div class="download-group-header">Прямое скачивание</div>
+                    
+                    <!-- Слайды лекций -->
+                    <div class="download-item">
+                        <div class="download-item-content">
+                            <span class="access-card-icon">📑</span>
+                            <div class="access-card-text">
+                                <div class="access-card-title">Слайды</div>
+                                <div class="access-card-desc">Презентация с теоретическим материалом тьюториала</div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-download">Скачать PDF</a>
+                    </div>
+                    
+                    <!-- Архив с исходным кодом и данными -->
+                    <div class="download-item">
+                        <div class="download-item-content">
+                            <span class="access-card-icon">📦</span>
+                            <div class="access-card-text">
+                                <div class="access-card-title">Архив с исходным кодом и данными</div>
+                                <div class="access-card-desc">Jupyter-ноутбук, модули, наборы данных</div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-download">Скачать ZIP</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Варианты работы с материалами -->
+            <h2 style="margin-top: 40px;">Варианты работы с материалами</h2>
+            
+            <p style="color: #444; margin-bottom: 20px;">Работать с материалами можно двумя способами:</p>
+            
+            <div>
+                <!-- Способ 1: Colab -->
+                <div class="workflow-option">
+                    <div class="workflow-title">1. В облачной среде Google Colab</div>
+                    <div class="workflow-desc">Не требует локальной установки Python и ключевых библиотек. Вычисления выполняются на удаленных серверах Google с доступом к GPU (с ограничениями по времени). Для работы достаточно браузера и учетной записи Google.</div>
+                    <details>
+                        <summary>
+                            <span>📋 Показать инструкцию</span>
+                            <span>▼</span>
+                        </summary>
+                        <div class="details-content">
+                            <div class="step">
+                                <div class="step-number"><strong>Шаг 1.</strong> Откройте ноутбук с заданиями в Google Colab по ссылке:</div>
+                                <a href="https://colab.research.google.com/github/username/pavt-tutorial-2026/blob/main/notebooks/student.ipynb" style="display: inline-flex; align-items: center; gap: 8px; background: #FFE0B2; color: black; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 0.9em; border: 1px solid #ffe0b2;">
+    <img src="https://colab.research.google.com/img/colab_favicon_256px.png" alt="Colab" style="width: 25px; height: 25px;">
+    Открыть ноутбук в Colab
+</a>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number"><strong>Шаг 2.</strong> Настройте среду выполнения с GPU. В открывшемся ноутбуке выберите в меню <code>Runtime → Change runtime type</code>. В появившемся окне в поле <code>Hardware accelerator</code> выберите <code>GPU</code> и нажмите <code>Save</code>.</div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number"><strong>Шаг 3.</strong> Выберите вариант работы (временный или с сохранением на Google Drive), скопируйте соответствующий код в первую ячейку ноутбука и выполните ее:</div>
+
+                                <!-- Вариант А: Временная сессия -->
+                                <div style="margin-bottom: 0px; margin-left: 16px;">
+                                    <div class="variant-title">🔹 <strong>Вариант А.</strong> Временная сессия (без сохранения)</div>
+                                    <div class="code-block">
+                                        <pre><code id="code-temp-session"># Клонирование репозитория с материалами
+!git clone https://github.com/username/pavt-tutorial-2026.git
+%cd pavt-tutorial-2026
+
+# Установка зависимостей
+!pip install -r requirements.txt -q</code></pre>
+                                        <button class="copy-btn" onclick="copyCode('code-temp-session')">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                            </svg>
+                                            Копировать
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <!-- Вариант Б: С хранением на Google Drive -->
+                                <div style="margin-bottom: 0px; margin-left: 16px;">
+                                    <div class="variant-title">🔹 <strong>Вариант Б.</strong> С хранением на Google Drive (сохранение прогресса)</div>
+                                    <div class="code-block">
+                                        <pre><code id="code-drive-session">from google.colab import drive
+drive.mount('/content/drive')
+
+!git clone https://github.com/username/pavt-tutorial-2026.git /content/drive/MyDrive/pavt-tutorial
+%cd /content/drive/MyDrive/pavt-tutorial
+
+!pip install -r requirements.txt -q</code></pre>
+                                        <button class="copy-btn" onclick="copyCode('code-drive-session')">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                            </svg>
+                                            Копировать
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+                
+                <!-- Способ 2: Локально -->
+                <div class="workflow-option">
+                    <div class="workflow-title">2. На локальном компьютере</div>
+                    <div class="workflow-desc">Требует скачивания архива с материалами на странице сайта или клонирования GitHub-репозитория, видеокарту NVIDIA с поддержкой CUDA и установленные драйверы.</div>
+                    <details>
+                        <summary>
+                            <span>📋 Показать инструкцию</span>
+                            <span>▼</span>
+                        </summary>
+
+                        <!-- Общие шаги для обоих способов -->
+                        <div class="details-content">
+                            <div class="step-text">
+                                <strong>Шаг 1.</strong> Получите материалы одним из способов:
+                            </div>
+                        
+                            <div style="margin: 12px 0 16px 16px;">
+                                <div style="margin-bottom: 16px;">
+                                    <div>🔹 <strong>Вариант А.</strong> Клонирование репозитория (через Git) с помощью команды в терминале:</div>
+                                    <div class="code-block" style="margin-top: 6px;">
+                                        <pre><code id="code-git-clone">git clone https://github.com/username/pavt-tutorial-2026.git</code></pre>
+                                        <button class="copy-btn" onclick="copyCode('code-git-clone')">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                            </svg>
+                                            Копировать
+                                        </button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>🔹 <strong>Вариант Б.</strong> Скачивание ZIP-архива и его распаковка:</div>
+                                    <ul style="margin: 6px 0 0 45px;">
+                                        <li>на странице сайта (раздел «Доступ к материалам», кнопка «Скачать ZIP»);</li>
+                                        <li>на странице репозитория GitHub: кнопка <code>Code → Download ZIP</code>.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        
+                            <div class="step-text">
+                                <strong>Шаг 2.</strong> Перейдите в папку проекта и настройте окружение, выполнив команды в терминале:
+                            </div>
+                            <div class="code-block">
+                                <pre><code id="code-local-setup">cd pavt-tutorial-2026             # переход в папку проекта
+python -m venv venv                # создание виртуального окружения
+source venv/bin/activate           # активация окружения (Linux/macOS)
+# venv\Scripts\activate            # активация окружения (Windows)
+pip install -r requirements.txt    # установка зависимостей
+jupyter notebook                   # запуск Jupyter Notebook</code></pre>
+                                <button class="copy-btn" onclick="copyCode('code-local-setup')">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                    Копировать
+                                </button>
+                            </div>
+                            <div class="step-text">В открывшемся интерфейсе Jupyter выберите <code>notebooks/pavt-tutorial-2026.ipynb</code>.</div>
+                        </div>  
+                    </details>
+                </div>
+            </div>
+            <div class="note-success" style="margin-top: 24px; background: #e8f5e9; border-left: 3px solid #28a745; padding: 12px 16px; border-radius: 0 4px 4px 0;">
+                <p style="margin: 0; color: #155724; font-size: 0.95em;">
+                    ✅ <strong>После выполнения всех шагов можно приступать к выполнению заданий.</strong> 
+                    При возникновении затруднений используйте <a href="solution.html" style="color: #155724; text-decoration: underline;">готовое решение</a>.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">О тьюториале</a>
+                <a href="speakers.html">Авторы</a>
+                <a href="program.html">Программа</a>
+                <a href="materials.html">Материалы</a>
+                <a href="solution.html">Готовое решение</a>
+            </div>
+            <p>© 2026, Тьюториал на научной конференции «Параллельные вычислительные технологии (ПаВТ) 2026»</p>
+            <p>Все материалы доступны на <a href="https://github.com/username/pavt-tutorial-2026">GitHub</a></p>
+        </div>
+    </footer>
     
-    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const allCopyButtons = document.querySelectorAll('.copy-btn');
+        
+        allCopyButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const codeBlock = this.closest('.code-block');
+                if (!codeBlock) return;
+                
+                const codeElement = codeBlock.querySelector('code');
+                if (!codeElement) return;
+                
+                const text = codeElement.innerText;
+                
+                navigator.clipboard.writeText(text).then(() => {
+                    const originalHTML = this.innerHTML;
+                    const originalBg = this.style.backgroundColor;
+                    const originalColor = this.style.color;
+                    
+                    // Галочка серого цвета (как исходная иконка)
+                    this.innerHTML = `
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Копировать
+                    `;
+                    this.style.backgroundColor = originalBg;
+                    this.style.color = '#666';
+                    
+                    setTimeout(() => {
+                        this.innerHTML = originalHTML;
+                        this.style.backgroundColor = originalBg;
+                        this.style.color = originalColor;
+                    }, 2000);
+                }).catch(err => {
+                    console.error('Ошибка копирования:', err);
+                    alert('Не удалось скопировать текст. Пожалуйста, скопируйте вручную (Ctrl+C).');
+                });
+            });
+        });
+    });
+    </script>
 </body>
 </html>

@@ -90,20 +90,6 @@ if (document.getElementById('notebook-frame')) {
     });
 }
 
-// ========== FAQ ==========
-function toggleFAQ(element) {
-    const answer = element.nextElementSibling;
-    const arrow = element.querySelector('span:last-child');
-    
-    if (answer.classList.contains('active')) {
-        answer.classList.remove('active');
-        arrow.textContent = '▼';
-    } else {
-        answer.classList.add('active');
-        arrow.textContent = '▲';
-    }
-}
-
 // ========== КОПИРОВАНИЕ В БУФЕР ==========
 function copyToClipboard(text) {
     navigator.clipboard.writeText(text).then(() => {

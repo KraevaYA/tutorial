@@ -7,26 +7,35 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="conference-badge">
-                🏆 ПаВТ-2026
-            </div>
-            <h1>🔍 Высокопроизводительный поиск аномалий во временных рядах</h1>
-        </header>
 
+    <!-- Шапка -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-text">
+            <h1>Параллельные алгоритмы поиска аномалий во&nbsp;временных рядах</h1>
+            <div class="subtitle" style="font-size: 1.3em; color: #666;">
+                Тьюториал на всероссийской научной конференции с международным участием <br> «Параллельные вычислительные технологии (ПаВТ) 2026»
+            </div>    
+        </div>
+    </header>
+
+    <!-- Навигация -->
+    <div class="nav-wrapper">
         <nav class="nav-menu">
-            <a href="index.html" class="nav-item">📋 О мастер-классе</a>
-            <a href="speakers.html" class="nav-item">👥 Докладчики</a>
-            <a href="program.html" class="nav-item">📅 Программа</a>
-            <a href="materials.html" class="nav-item">📚 Материалы</a>
-            <a href="solution.html" class="nav-item active">💡 Готовое решение</a>
+            <a href="index.html" class="nav-item">О тьюториале</a>
+                <a href="speakers.html" class="nav-item">Авторы</a>
+                <a href="program.html" class="nav-item">Программа</a>
+                <a href="materials.html" class="nav-item">Материалы</a>
+                <a href="solution.html" class="nav-item active">Готовое решение</a>
+            </nav>
         </nav>
+    </div>
 
-        <main class="content">
-            <h1>💡 Готовое решение всех заданий</h1>
+    <main class="main-content">
+        <div class="content">
+            <h1 class="page-title">Готовое решение</h1>
             
-            <div class="info-box">
+            <!--<div class="info-box">
                 <strong>📋 Как пользоваться страницей:</strong>
                 <ol style="margin-top: 15px; margin-left: 20px;">
                     <li>Выберите номер задания в меню ниже</li>
@@ -35,10 +44,10 @@
                     <li>Вставьте код в свой ноутбук (Ctrl+V)</li>
                     <li>Если не знаете, какое задание соответствует какому номеру — см. <a href="program.html">программу</a></li>
                 </ol>
-            </div>
+            </div>-->
             
             <!-- Селектор заданий -->
-            <div class="task-selector">
+            <!--<div class="task-selector">
                 <button class="task-button active" onclick="loadTask(1)">📋 Задание 1</button>
                 <button class="task-button" onclick="loadTask(2)">📋 Задание 2</button>
                 <button class="task-button" onclick="loadTask(3)">📋 Задание 3</button>
@@ -48,15 +57,15 @@
                 <button class="task-button" onclick="loadTask(7)">📋 Задание 7</button>
                 <button class="task-button" onclick="loadTask(8)">📋 Задание 8</button>
                 <button class="task-button" onclick="loadTask(9)">📋 Задание 9</button>
-            </div>
+            </div>-->
             
             <!-- Информация о текущем задании -->
-            <div style="background: #f0f7ff; padding: 20px; border-radius: 10px; margin: 20px 0;">
+            <!--<div style="background: #f0f7ff; padding: 20px; border-radius: 10px; margin: 20px 0;">
                 <h3 id="task-title" style="margin-bottom: 10px;">Задание 1: Загрузка данных</h3>
                 <p id="task-description" style="color: #666;">
                     Загрузите временной ряд NYC Taxi из CSV-файла и преобразуйте индекс в datetime.
                 </p>
-            </div>
+            </div>-->
             
             <!-- Контейнер с iframe -->
             <div class="iframe-container">
@@ -71,11 +80,11 @@
                 <a href="https://colab.research.google.com/github/username/repo/blob/main/student.ipynb" 
                    target="_blank" 
                    class="btn btn-colab">
-                   📓 Открыть свой ноутбук в Colab
+                   📓 Открыть ноутбук в Colab
                 </a>
                 <a href="https://nbviewer.org/github/username/repo/blob/main/solved.ipynb" 
                    target="_blank"
-                   class="btn btn-info">
+                   class="btn btn-info" style="border: 1px solid grey; color: black;">
                    📑 Открыть на полный экран
                 </a>
                 <a href="assets/files/solved.ipynb" 
@@ -84,34 +93,23 @@
                    ⬇️ Скачать готовое решение
                 </a>
             </div>
-            
-            <!-- Подсказка по заданиям -->
-            <div style="margin-top: 40px;">
-                <h3>📋 Соответствие заданий</h3>
-                <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
-                    <tr style="background: #f0f0f0;">
-                        <th style="padding: 12px; text-align: left;">Задание</th>
-                        <th style="padding: 12px; text-align: left;">Описание</th>
-                        <th style="padding: 12px; text-align: left;">Где искать в ноутбуке</th>
-                    </tr>
-                    <tr><td>1</td><td>Загрузка данных</td><td>Ячейка после "Задание 1"</td></tr>
-                    <tr><td>2</td><td>Визуализация ряда</td><td>Ячейка после "Задание 2"</td></tr>
-                    <tr><td>3</td><td>Поиск top-k диссонансов</td><td>Ячейка после "Задание 3"</td></tr>
-                    <tr><td>4</td><td>Первый запуск DRAG</td><td>Ячейка после "Задание 4"</td></tr>
-                    <tr><td>5</td><td>Эксперимент с порогом r</td><td>Цикл в "Задании 5"</td></tr>
-                    <tr><td>6</td><td>Визуализация метрик</td><td>Ячейка после "Задание 6"</td></tr>
-                    <tr><td>7</td><td>Запуск PD3</td><td>Ячейка после "Задание 7"</td></tr>
-                    <tr><td>8</td><td>Сравнение DRAG и PD3</td><td>Цикл в "Задании 8"</td></tr>
-                    <tr><td>9</td><td>MERLIN и PALMAD</td><td>Ячейки после "Задание 9"</td></tr>
-                </table>
-            </div>
-        </main>
+        </div>
+    </main>
 
-        <footer class="footer">
-            <p>© 2026, Мастер-класс на конференции «Параллельные вычислительные технологии» (ПаВТ-2026)</p>
-        </footer>
-    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">О тьюториале</a>
+                <a href="speakers.html">Авторы</a>
+                <a href="program.html">Программа</a>
+                <a href="materials.html">Материалы</a>
+                <a href="solution.html">Готовое решение</a>
+            </div>
+            <p>© 2026, Тьюториал на научной конференции «Параллельные вычислительные технологии (ПаВТ) 2026»</p>
+            <p>Все материалы доступны на <a href="https://github.com/username/pavt-tutorial-2026">GitHub</a></p>
+        </div>
+    </footer>
     
-    <script src="js/main.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

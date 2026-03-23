@@ -3,132 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>О мастер-классе | Поиск аномалий во временных рядах | ПаВТ-2026</title>
+    <title>О тьюториале | Поиск аномалий во временных рядах | ПаВТ-2026</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
+    <!--<div class="container">-->
         <!-- Шапка -->
         <header class="header">
-            <div class="conference-badge">
-                🏆 ПаВТ-2026
-            </div>
-            <h1>🔍 Высокопроизводительный поиск аномалий во временных рядах</h1>
-            <p style="font-size: 1.3em; color: #666; margin-bottom: 30px;">
-                Мастер-класс на конференции «Параллельные вычислительные технологии»
-            </p>
-            
-            <div class="meta-info">
-                <div class="meta-item">
-                    <span>📅</span>
-                    <span>30 марта 2026</span>
-                </div>
-                <div class="meta-item">
-                    <span>⏰</span>
-                    <span>10:00 – 13:00</span>
-                </div>
-                <div class="meta-item">
-                    <span>📍</span>
-                    <span>Онлайн / Зал 3</span>
-                </div>
-                <div class="meta-item">
-                    <span>👥</span>
-                    <span>До 50 участников</span>
-                </div>
+            <div class="header-content">
+                <div class="header-text">
+                <h1>Параллельные алгоритмы поиска аномалий во&nbsp;временных рядах</h1>
+                <div class="subtitle" style="font-size: 1.3em; color: #666;">
+                    Тьюториал на всероссийской научной конференции с международным участием <br> «Параллельные вычислительные технологии (ПаВТ) 2026»
+                </div>    
             </div>
         </header>
 
         <!-- Навигация -->
-        <nav class="nav-menu">
-            <a href="index.html" class="nav-item active">📋 О мастер-классе</a>
-            <a href="speakers.html" class="nav-item">👥 Докладчики</a>
-            <a href="program.html" class="nav-item">📅 Программа</a>
-            <a href="materials.html" class="nav-item">📚 Материалы</a>
-            <a href="solution.html" class="nav-item">💡 Готовое решение</a>
-        </nav>
+        <div class="nav-wrapper">
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item active">О тьюториале</a>
+                    <a href="speakers.html" class="nav-item">Авторы</a>
+                    <a href="program.html" class="nav-item">Программа</a>
+                    <a href="materials.html" class="nav-item">Материалы</a>
+                    <a href="solution.html" class="nav-item">Готовое решение</a>
+                </nav>
+            </nav>
+        </div>
 
         <!-- Контент -->
-        <main class="content">
-            <h1>📋 О мастер-классе</h1>
+        <main class="main-content">
+            <div class="content">
+            <h1 class="page-title">О тьюториале</h1>
             
-            <div class="card">
-                <h2>Аннотация</h2>
-                <p style="font-size: 1.1em; margin-bottom: 20px;">
-                    Временные ряды — последовательности измерений некоторой величины во времени — широко распространены 
-                    в различных предметных областях: от анализа финансовых рынков до мониторинга промышленного оборудования. 
-                    Поиск аномалий во временных рядах является одной из важнейших задач анализа данных, так как аномалии 
-                    могут указывать на нештатное поведение систем, сбои оборудования, кибератаки или другие критически 
-                    важные события.
-                </p>
-                <p style="font-size: 1.1em;">
-                    Однако существующие алгоритмы поиска аномалий часто имеют высокую вычислительную сложность, что 
-                    затрудняет их применение на больших данных в реальном времени. На мастер-классе мы рассмотрим 
-                    современные параллельные алгоритмы поиска аномалий во временных рядах, реализованные с использованием 
-                    графических процессоров (GPU).
-                </p>
+            <!--<div class="card">-->
+            <h2>Аннотация</h2>
+            <p style="font-size: 1.1em; margin-bottom: 20px;">
+                Интеллектуальная обработка временных рядов требуется в широком спектре предметных областей: финансы, климатология, медицина, цифровую индустрия, Интернет вещей и др. Обнаружение аномалий – одна из наиболее актуальных задач интеллектуального анализа временных рядов, которая позволяет выявить интервалы, наиболее отличающиеся от остальных данных. В рамках тьюториала будут представлены параллельные алгоритмы обнаружения аномалий временного ряда для графических процессоров; участники будут искать аномалии временных рядов из реальных практических задач. Для участия не требуется быть профессиональным программистом: будут предоставлены наборы данных, заготовки программ и подсказки, чтобы свести написание кода к десятку строк.
+            </p>
+            <!--</div>-->
+
+             <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="./img/task.png" alt="Задача поиска аномалий">
+                </div>
             </div>
             
-            <h2>Цели и задачи</h2>
+
+            <h2>Целевая аудитория и требования</h2>
+            <p style="font-size: 1.1em;">
+                <ul style="margin-left: 15px;">
+                    <li>Студенты бакалавриата, магистратуры и аспиранты, исследователи и практики в области компьютерных наук и смежных дисциплин.</li>
+                    <li>Необходимо владение любым языком программирования высокого уровня (предпочтительно Python).</li>
+                    <li>Необходим ноутбук со стабильным подключением к интернету, действующий аккаунт Google и доступ к Google Colab.</li>
+                </ul>
+            </p>
+
+
+            <h2>Длительность и программа</h2>
+            <p style="font-size: 1.1em;">
+                <ul style="margin-left: 15px;">
+                    <li>Длительность – 2 академических часа.</li>
+                    <li>Лекционный материал перемежается с выполнением практических заданий.</li>
+                    <li>Тьюториал покрывает следующие основные темы: 
+                        <ul style="margin-left: 15px;">
+                            <li>диссонансы временного ряда [<a href="https://doi.org/10.1109/CBMS.2005.34">1</a>];</li>
+                            <li>последовательные алгоритмы поиска диссонансов DRAG [<a href="https://doi.org/10.1007/s10115-008-0131-9">2</a>] и MERLIN [<a href="https://doi.org/10.1007/s10618-022-00876-7">3</a>];</li>
+                            <li>параллельные алгоритмы поиска диссонансов PD3 [<a href="https://doi.org/10.1134/S1054661823020062">4</a>] и PALMAD [<a href="https://doi.org/10.3390/math11143193">5</a>].</li>
+                        </ul>
+                </ul>
+            </p>
+
+            
+            <h2>Место и время</h2>
+             <!--<div class="meta-info">-->
+            <p style="font-size: 1.1em;">
+                <ul style="margin-left: 15px;">
+                    <li>Дата: 6 апреля 2026.</li>
+                    <li>Время: 13:00–14:30.</li>
+                    <li>Место: Уфа, Межвузовский студенческий кампус Евразийского НОЦ, ул. Заки Валиди, д. 32/2, ауд. 335 (<a href="https://yandex.ru/maps/-/CPA3f0-u">карта</a>).</li>
+                </ul>
+            </p>
+            <!--</div>-->
+
+            <h2>Литература</h2>
             <div class="grid-2">
-                <div class="card">
-                    <strong>🎯 Цель мастер-класса</strong>
-                    <p style="margin-top: 10px;">Познакомить участников с методами высокопроизводительного поиска аномалий и дать практические навыки применения алгоритмов DRAG, PD3, MERLIN и PALMAD.</p>
-                </div>
-                
-                <div class="card">
-                    <strong>📚 Формат</strong>
-                    <p style="margin-top: 10px;">Лекция (45 мин) + практикум (90 мин) с готовыми решениями. Участники смогут копировать код решений и запускать его в Google Colab.</p>
-                </div>
-                
-                <div class="card">
-                    <strong>🔧 Необходимая подготовка</strong>
-                    <p style="margin-top: 10px;">Базовое знание Python и библиотек numpy/pandas. Опыт работы с временными рядами не обязателен.</p>
-                </div>
-                
-                <div class="card">
-                    <strong>⚡ Технические требования</strong>
-                    <p style="margin-top: 10px;">Google-аккаунт (для Colab), браузер с поддержкой современных стандартов. GPU для выполнения алгоритмов предоставляется Colab бесплатно.</p>
-                </div>
+                <ol style="margin-left: 15px;">
+                    <li>Lin J. et al. Approximations to magic: Finding unusual medical time series. CBMS 2005, 329-334. DOI: <a href="https://doi.org/10.1109/CBMS.2005.34">10.1109/CBMS.2005.34</a>.</li>
+                    <li>Yankov D. et al. Disk aware discord discovery: Finding unusual time series in terabyte sized datasets. Knowl. Inf. Syst. 2008. 17(2), 241-262. DOI: <a href="https://doi.org/10.1007/s10115-008-0131-9">10.1007/s10115-008-0131-9</a>.</li>
+                    <li>Nakamura T. et al. MERLIN++: Parameter-free discovery of time series anomalies. Data Min. Knowl. Discov. 2023. 37(2), 670-709. DOI: <a href="https://doi.org/10.1007/s10618-022-00876-7">10.1007/s10618-022-00876-7</a>.</li>
+                    <li>Kraeva Ya., Zymbler M. A parallel discord discovery algorithm for a graphics processor. Pattern Recognition and Image Analysis. 2023. 33(2), 101-112. DOI: <a href="https://doi.org/10.1134/S1054661823020062">10.1134/S1054661823020062</a>.</li>
+                    <li>Zymbler M., Kraeva Ya. High-Performance time series anomaly discovery on graphics processors. Mathematics. 2023. 11(14), 3193. DOI: <a href="https://doi.org/10.3390/math11143193">10.3390/math11143193</a>.</li>
+                </ol>
             </div>
-            
-            <h2>Что вы узнаете</h2>
-            <div class="grid-2">
-                <div class="card">
-                    <strong>✅ Типы аномалий</strong>
-                    <p>Точечные и коллективные аномалии, их особенности и методы обнаружения</p>
-                </div>
-                <div class="card">
-                    <strong>✅ Матричный профиль</strong>
-                    <p>Базовая техника поиска диссонансов во временных рядах</p>
-                </div>
-                <div class="card">
-                    <strong>✅ Алгоритмы фиксированной длины</strong>
-                    <p>DRAG (CPU) и PD3 (GPU), влияние порога r на качество</p>
-                </div>
-                <div class="card">
-                    <strong>✅ Алгоритмы произвольной длины</strong>
-                    <p>MERLIN (CPU) и PALMAD (GPU), поиск аномалий без подбора длины</p>
-                </div>
-                <div class="card">
-                    <strong>✅ Параллельные вычисления на GPU</strong>
-                    <p>Как получить ускорение в 5-10 раз</p>
-                </div>
-            </div>
-            
-            <div class="info-box">
-                <strong>📌 Ключевая особенность мастер-класса</strong>
-                <p style="margin-top: 10px;">Все алгоритмы будут продемонстрированы на реальных данных NYC Taxi с размеченными аномалиями. Участники получат готовые решения, которые можно скопировать и использовать в своих проектах.</p>
-            </div>
+        </div>
         </main>
 
         <!-- Футер -->
         <footer class="footer">
-            <p>© 2026, Мастер-класс на конференции «Параллельные вычислительные технологии» (ПаВТ-2026)</p>
-            <p>Все материалы доступны на <a href="https://github.com/username/pavt-tutorial-2026">GitHub</a></p>
-            <p style="margin-top: 20px; font-size: 0.9em;">По вопросам: <a href="mailto:organizers@example.com">organizers@example.com</a></p>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="index.html">О тьюториале</a>
+                    <a href="speakers.html">Авторы</a>
+                    <a href="program.html">Программа</a>
+                    <a href="materials.html">Материалы</a>
+                    <a href="solution.html">Готовое решение</a>
+                </div>
+                <p>© 2026, Тьюториал на научной конференции «Параллельные вычислительные технологии (ПаВТ) 2026»</p>
+                <p>Все материалы доступны на <a href="https://github.com/username/pavt-tutorial-2026">GitHub</a></p>
+            </div>
         </footer>
     </div>
     
-    <script src="js/main.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
