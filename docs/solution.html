@@ -14,7 +14,7 @@
             <div class="header-text">
             <h1>Параллельные алгоритмы поиска аномалий во&nbsp;временных рядах</h1>
             <div class="subtitle" style="font-size: 1.3em; color: #666;">
-                Тьюториал на всероссийской научной конференции с международным участием <br> «Параллельные вычислительные технологии (ПаВТ) 2026»
+                Тьюториал на <a href="https://xn--80ae1bo.xn--p1ai/2026/" style="color: #666; text-decoration: none;">всероссийской научной конференции с международным участием <br> «Параллельные вычислительные технологии (ПаВТ) 2026»</a>
             </div>    
         </div>
     </header>
@@ -24,8 +24,9 @@
         <nav class="nav-menu">
             <a href="index.html" class="nav-item">О тьюториале</a>
                 <a href="speakers.html" class="nav-item">Авторы</a>
-                <a href="program.html" class="nav-item">Программа</a>
+                <a href="program.html" class="nav-item">Содержание</a>
                 <a href="materials.html" class="nav-item">Материалы</a>
+                <a href="instructions.html" class="nav-item">Инструкции</a>
                 <a href="solution.html" class="nav-item active">Готовое решение</a>
             </nav>
         </nav>
@@ -34,38 +35,76 @@
     <main class="main-content">
         <div class="content">
             <h1 class="page-title">Готовое решение</h1>
+
+
+            <p>На этой странице представлен полностью выполненный ноутбук с решениями всех заданий, сгруппированных по трем частям тьюториала. Выберите задание в списке ниже — ноутбук автоматически перейдет к нужной ячейке.</p>
             
-            <!--<div class="info-box">
-                <strong>📋 Как пользоваться страницей:</strong>
-                <ol style="margin-top: 15px; margin-left: 20px;">
-                    <li>Выберите номер задания в меню ниже</li>
-                    <li>Ноутбук автоматически прокрутится к нужному месту</li>
-                    <li>Нажмите на иконку копирования в правом верхнем углу ячейки с кодом</li>
-                    <li>Вставьте код в свой ноутбук (Ctrl+V)</li>
-                    <li>Если не знаете, какое задание соответствует какому номеру — см. <a href="program.html">программу</a></li>
-                </ol>
-            </div>-->
+
+            <!-- 2. Переход к заданию-->
+            <!--<h2>Задания</h2>-->
+
+            <div class="tasks-accordion">
+                <!-- Часть 1 -->
+                <details class="task-block" style="border-left: 4px solid #4285f4; background: white; border-radius: 0 8px 8px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" open>
+                    <summary class="block-header">
+                        <span style="font-weight: 600; color: #4285f4;">Часть 1. Введение в задачу поиска аномалий</span>
+                        <span class="task-count">2 задания</span>
+                    </summary>
+                    <div class="block-buttons">
+                        <button class="task-btn" onclick="loadTask(1)">
+                            <span class="task-num">Задание 1.</span> Загрузка и визуализация данных NYC Taxi
+                        </button>
+                        <button class="task-btn" onclick="loadTask(2)">
+                            <span class="task-num">Задание 2.</span> Поиск Top-5 диссонансов
+                        </button>
+                    </div>
+                </details>
+
+                <!-- Часть 2 -->
+                <details class="task-block" style="border-left: 4px solid #ea4335; background: white; border-radius: 0 8px 8px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                    <summary class="block-header">
+                        <span style="font-weight: 600; color: #ea4335;">Часть 2. Поиск диссонансов фиксированной длины</span>
+                        <span class="task-count">4 задания</span>
+                    </summary>
+                    <div class="block-buttons">
+                        <button class="task-btn" onclick="loadTask(3)">
+                            <span class="task-num">Задание 3.</span> Алгоритм DRAG (CPU)
+                        </button>
+                        <button class="task-btn" onclick="loadTask(4)">
+                            <span class="task-num">Задание 4.</span> Исследование влияния порога
+                        </button>
+                        <button class="task-btn" onclick="loadTask(5)">
+                            <span class="task-num">Задание 5.</span> Алгоритм PD3 (GPU)
+                        </button>
+                        <button class="task-btn" onclick="loadTask(6)">
+                            <span class="task-num">Задание 6.</span> Сравнение быстродействия DRAG и PD3
+                        </button>
+                    </div>
+                </details>
+
+                <!-- Часть 3 -->
+                <details class="task-block" style="border-left: 4px solid #34a853; background: white; border-radius: 0 8px 8px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                    <summary class="block-header">
+                        <span style="font-weight: 600; color: #34a853;">Часть 3. Поиск диссонансов произвольной длины</span>
+                        <span class="task-count">3 задания</span>
+                    </summary>
+                    <div class="block-buttons">
+                        <button class="task-btn" onclick="loadTask(7)">
+                            <span class="task-num">Задание 7.</span> Алгоритм MERLIN (CPU)
+                        </button>
+                        <button class="task-btn" onclick="loadTask(8)">
+                            <span class="task-num">Задание 8.</span> Алгоритм PALMAD (GPU)
+                        </button>
+                        <button class="task-btn" onclick="loadTask(9)">
+                            <span class="task-num">Задание 9.</span> Сравнение быстродействия MERLIN и PALMAD
+                        </button>
+                    </div>
+                </details>
+            </div>
+
             
-            <!-- Селектор заданий -->
-            <!--<div class="task-selector">
-                <button class="task-button active" onclick="loadTask(1)">📋 Задание 1</button>
-                <button class="task-button" onclick="loadTask(2)">📋 Задание 2</button>
-                <button class="task-button" onclick="loadTask(3)">📋 Задание 3</button>
-                <button class="task-button" onclick="loadTask(4)">📋 Задание 4</button>
-                <button class="task-button" onclick="loadTask(5)">📋 Задание 5</button>
-                <button class="task-button" onclick="loadTask(6)">📋 Задание 6</button>
-                <button class="task-button" onclick="loadTask(7)">📋 Задание 7</button>
-                <button class="task-button" onclick="loadTask(8)">📋 Задание 8</button>
-                <button class="task-button" onclick="loadTask(9)">📋 Задание 9</button>
-            </div>-->
-            
-            <!-- Информация о текущем задании -->
-            <!--<div style="background: #f0f7ff; padding: 20px; border-radius: 10px; margin: 20px 0;">
-                <h3 id="task-title" style="margin-bottom: 10px;">Задание 1: Загрузка данных</h3>
-                <p id="task-description" style="color: #666;">
-                    Загрузите временной ряд NYC Taxi из CSV-файла и преобразуйте индекс в datetime.
-                </p>
-            </div>-->
+            <h2 style="margin-top: 35px;">Просмотр решения</h2>
+
             
             <!-- Контейнер с iframe -->
             <div class="iframe-container">
@@ -77,10 +116,9 @@
             
             <!-- Быстрые ссылки -->
             <div style="display: flex; gap: 15px; margin-top: 30px; flex-wrap: wrap; justify-content: center;">
-                <a href="https://colab.research.google.com/github/username/repo/blob/main/student.ipynb" 
-                   target="_blank" 
-                   class="btn btn-colab">
-                   📓 Открыть ноутбук в Colab
+                <a href="https://colab.research.google.com/github/username/repo/blob/main/student.ipynb"" style="display: inline-flex; align-items: center; gap: 8px; background: #FFE0B2; color: black; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 0.9em; border: 1px solid #ffe0b2;">
+                    <img src="https://colab.research.google.com/img/colab_favicon_256px.png" alt="Colab" style="width: 25px; height: 25px;">
+                Открыть ноутбук в Colab
                 </a>
                 <a href="https://nbviewer.org/github/username/repo/blob/main/solved.ipynb" 
                    target="_blank"
@@ -101,8 +139,9 @@
             <div class="footer-links">
                 <a href="index.html">О тьюториале</a>
                 <a href="speakers.html">Авторы</a>
-                <a href="program.html">Программа</a>
+                <a href="program.html">Содержание</a>
                 <a href="materials.html">Материалы</a>
+                <a href="instructions.html">Инструкции</a>
                 <a href="solution.html">Готовое решение</a>
             </div>
             <p>© 2026, Тьюториал на научной конференции «Параллельные вычислительные технологии (ПаВТ) 2026»</p>
