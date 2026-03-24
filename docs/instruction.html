@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.8">
-    <title>Инструкции | Поиск аномалий во временных рядах | ПаВТ-2026</title>
+    <title>Инструкция | Поиск аномалий во временных рядах | ПаВТ-2026</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,7 +26,7 @@
                 <a href="speakers.html" class="nav-item">Авторы</a>
                 <a href="program.html" class="nav-item">Содержание</a>
                 <a href="materials.html" class="nav-item">Материалы</a>
-                <a href="instructions.html" class="nav-item active">Инструкции</a>
+                <a href="instruction.html" class="nav-item active">Инструкция</a>
                 <a href="solution.html" class="nav-item">Готовое решение</a>
             </nav>
         </nav>
@@ -34,19 +34,35 @@
 
     <main class="main-content">
         <div class="content">
-            <h1 class="page-title">Инструкции по работе с материалами</h1>
+            <h1 class="page-title">Инструкция по работе с материалами</h1>
+
+            <p>Чтобы приступить к выполнению заданий тьюториала, необходимо подготовить среду выполнения. Предусмотрено два способа работы:</p>
+
+             <!-- Карточки выбора -->
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icon"><img src="https://colab.research.google.com/img/colab_favicon_256px.png" alt="Colab" style="width: 40px; height: 40px;"></div>
+                    <div class="card-title">
+                        Использование Google Colab
+                        <span class="card-badge">рекомендуется</span>
+                    </div>
+                    <div class="card-desc">Не требуется локальная установка Python и ключевых библиотек. Вычисления выполняются на удаленных серверах Google с доступом к GPU (с ограничениями по времени). Для работы достаточно браузера и учетной записи Google.</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💻</div>
+                    <div class="card-title">Работа на локальном компьютере</div>
+                    <div class="card-desc">Требуется скачивание архива с материалами на странице <a href="./materials.html">Материалы"</a> или клонирование <a href="">GitHub-репозитория</a>, а также наличие видеокарты NVIDIA с поддержкой CUDA и установленные драйверы.</div>
+                </div>
+            </div>
+
+            <p style="margin-bottom: 24px; color: #444;">Выберите подходящий вариант и следуйте соответствующей инструкции, представленной ниже. После настройки среды можно приступать к реализации заданий. При возникновении затруднений используйте <a href="./solution.html">готовое решение</a>.</p>
             
 
-            <!-- 3. Варианты работы с материалами -->
-            <h2 style="margin-top: 0px;">Варианты работы с материалами</h2>
-            
-            <p style="color: #444; margin-bottom: 20px;">Работать с материалами можно двумя способами:</p>
-            
+            <h2 style="margin-top: 0px;">Пошаговые инструкции</h2>
             <div>
                 <!-- Способ 1: Colab -->
                 <div class="workflow-option">
-                    <div class="workflow-title">1. В облачной среде Google Colab</div>
-                    <div class="workflow-desc">Не требует локальной установки Python и ключевых библиотек. Вычисления выполняются на удаленных серверах Google с доступом к GPU (с ограничениями по времени). Для работы достаточно браузера и учетной записи Google.</div>
+                    <div class="workflow-title"><img src="https://colab.research.google.com/img/colab_favicon_256px.png" alt="Colab" style="width: 24px; height: 24px;"> Использование Google Colab <span class="card-badge">рекомендуется</span></div>
                     <details>
                         <summary>
                             <span>📋 Показать инструкцию</span>
@@ -115,8 +131,7 @@ drive.mount('/content/drive')
                 
                 <!-- Способ 2: Локально -->
                 <div class="workflow-option">
-                    <div class="workflow-title">2. На локальном компьютере</div>
-                    <div class="workflow-desc">Требует скачивания архива с материалами на странице сайта или клонирования GitHub-репозитория, видеокарту NVIDIA с поддержкой CUDA и установленные драйверы.</div>
+                    <div class="workflow-title">💻 Работа на локальном компьютере</div>
                     <details>
                         <summary>
                             <span>📋 Показать инструкцию</span>
@@ -170,16 +185,10 @@ jupyter notebook                   # запуск Jupyter Notebook</code></pre>
                                     Копировать
                                 </button>
                             </div>
-                            <div class="step-text">В открывшемся интерфейсе Jupyter выберите <code>notebooks/pavt-tutorial-2026.ipynb</code>.</div>
+                            <div class="step-text"><strong>Шаг 3.</strong> В открывшемся интерфейсе Jupyter выберите <code>notebooks/pavt-tutorial-2026.ipynb</code>.</div>
                         </div>  
                     </details>
                 </div>
-            </div>
-            <div class="note-success" style="margin-top: 24px; background: #e8f5e9; border-left: 3px solid #28a745; padding: 12px 16px; border-radius: 0 4px 4px 0;">
-                <p style="margin: 0; color: #155724; font-size: 0.95em;">
-                    ✅ <strong>После выполнения всех шагов можно приступать к выполнению заданий.</strong> 
-                    При возникновении затруднений используйте <a href="solution.html" style="color: #155724; text-decoration: underline;">готовое решение</a>.
-                </p>
             </div>
         </div>
     </main>
@@ -191,7 +200,7 @@ jupyter notebook                   # запуск Jupyter Notebook</code></pre>
                 <a href="speakers.html">Авторы</a>
                 <a href="program.html">Содержание</a>
                 <a href="materials.html">Материалы</a>
-                <a href="instructions.html">Инструкции</a>
+                <a href="instruction.html">Инструкция</a>
                 <a href="solution.html">Готовое решение</a>
             </div>
             <p>© 2026, Тьюториал на научной конференции «Параллельные вычислительные технологии (ПаВТ) 2026»</p>
