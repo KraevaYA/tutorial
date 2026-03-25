@@ -854,7 +854,6 @@ code {
     border-radius: 8px;
 }
 
-
 .task-selector {
     display: flex;
     gap: 8px;
@@ -943,50 +942,52 @@ iframe {
     padding: 10px 20px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
 }
 
+
+
+/* Стили для кнопок заданий */
 .task-btn {
-    /*background: #f5f5f5;
-    border: 1px solid #eaeaea;
-    border-radius: 12px;*/
-    background: white;
+    background: none;
     border: none;
-    padding: 8px 0px;
+    padding: 8px 0;
     cursor: pointer;
-    font-size: 0.9em;
+    font-size: 0.95em;
     transition: all 0.2s;
     display: inline-flex;
-    align-items: center;
+    align-items: baseline;
     gap: 8px;
+    color: #1a1a1a;
+    font-family: inherit;
 }
 
 .task-num {
-    background: #e0e0e0;
-    border-radius: 5px;
-    padding: 2px 8px;
-    font-size: 0.7em;
     font-weight: 600;
+    color: #666;
+    background: none;
+    padding: 0;
+    font-size: 0.95em;
 }
 
 .task-btn:hover {
-    /*background: #e8f0fe;
-    border-color: #0066cc;*/
-    /*border-bottom: 1px solid black; */
-    /*transform: translateY(-1px);*/
+    /*color: #0066cc;*/
+    /*transform: translateX(4px);*/
+}
+
+.task-btn:hover .task-num {
+    /*color: #0066cc;*/
 }
 
 .task-btn.active {
-    background: #0066cc;
-    border-color: #0066cc;
-    color: white;
+    color: #0066cc;
+    font-weight: 500;
 }
 
 .task-btn.active .task-num {
-    background: white;
     color: #0066cc;
 }
-
+/*====================*/
 
 .instruction {
     background: #e8f0fe;
