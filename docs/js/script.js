@@ -17,42 +17,18 @@ document.addEventListener('DOMContentLoaded', function() {
 // ВАЖНО: Замените эти ID на реальные ID ячеек из вашего ноутбука
 // Откройте ноутбук в nbviewer, найдите ID ячеек и вставьте их сюда
 const taskAnchors = {
-    1: '#cell-1',  // Задание 1
-    2: '#cell-2',  // Задание 2
-    3: '#cell-3',  // Задание 3
-    4: '#cell-4',  // Задание 4
-    5: '#cell-5',  // Задание 5
-    6: '#cell-6',  // Задание 6
-    7: '#cell-7',  // Задание 7
-    8: '#cell-8',  // Задание 8
-    9: '#cell-9'   // Задание 9
+    1: '#Задание-1',  // Задание 1
+    2: '#Задание-2',  // Задание 2
+    3: '#Задание-3',  // Задание 3
+    4: '#Задание-4',  // Задание 4
+    5: '#Задание-5',  // Задание 5
+    6: '#Задание-6',  // Задание 6
+    7: '#Задание-7',  // Задание 7
+    8: '#Задание-8',  // Задание 8
+    9: '#Задание-9'   // Задание 9
 };
 
-const taskTitles = {
-    1: 'Задание 1: Загрузка данных',
-    2: 'Задание 2: Визуализация ряда',
-    3: 'Задание 3: Поиск top-k диссонансов',
-    4: 'Задание 4: Первый запуск DRAG',
-    5: 'Задание 5: Эксперимент с порогом r',
-    6: 'Задание 6: Визуализация метрик',
-    7: 'Задание 7: Запуск PD3',
-    8: 'Задание 8: Сравнение DRAG и PD3',
-    9: 'Задание 9: MERLIN и PALMAD'
-};
-
-const taskDescriptions = {
-    1: 'Загрузите временной ряд NYC Taxi из CSV-файла и преобразуйте индекс в datetime.',
-    2: 'Постройте график временного ряда с помощью функции plot_ts().',
-    3: 'Найдите top-5 диссонансов длины 96 с помощью матричного профиля.',
-    4: 'Запустите алгоритм DRAG с параметрами m=96, r=1.85.',
-    5: 'Проведите эксперимент с разными значениями порога r от 0.5 до 5.',
-    6: 'Постройте графики метрик Precision, Recall, F1 для разных r.',
-    7: 'Запустите параллельную версию PD3 на GPU.',
-    8: 'Сравните производительность DRAG и PD3 при разных r.',
-    9: 'Найдите аномалии произвольной длины с помощью MERLIN и PALMAD.'
-};
-
-const baseUrl = 'https://nbviewer.org/github/username/repo/blob/main/solutions.ipynb';
+const baseUrl = 'https://nbviewer.org/github/KraevaYA/tutorial-notebook/blob/main/pct_tutorial_2026.ipynb';
 
 function loadTask(taskNumber) {
     const iframe = document.getElementById('notebook-frame');
@@ -67,11 +43,6 @@ function loadTask(taskNumber) {
     });
     document.querySelectorAll('.task-button')[taskNumber-1].classList.add('active');
     
-    // Обновляем информацию о задании
-    const taskTitleEl = document.getElementById('task-title');
-    const taskDescEl = document.getElementById('task-description');
-    if (taskTitleEl) taskTitleEl.textContent = taskTitles[taskNumber];
-    if (taskDescEl) taskDescEl.textContent = taskDescriptions[taskNumber];
     
     // Обновляем URL без перезагрузки страницы
     const url = new URL(window.location);
