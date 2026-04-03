@@ -945,10 +945,9 @@ iframe {
     gap: 15px;
 }
 
-
-
 /* Стили для кнопок заданий */
 .task-btn {
+    text-align: left;
     background: none;
     border: none;
     padding: 8px 0;
