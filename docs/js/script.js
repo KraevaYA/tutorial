@@ -18,7 +18,7 @@ const taskAnchors = {
     1: '#Задание-1.-Подготовка-GPU-среды-выполнения',  // Задание 1
     2: '#Задание-2.-Загрузка-и-визуализация-ряда-NYC-Taxi',  // Задание 2
     3: '#Задание-3.-Поиск-top-$k$-диссонансов',  // Задание 3
-    4: '#Задание-4.-Алгоритм DRAG (CPU)',  // Задание 4
+    4: '#Задание-4.-Алгоритм-DRAG-(CPU)',  // Задание 4
     5: '#Задание-5.-Исследование-влияния-порога',  // Задание 5
     6: '#Задание-6.-Алгоритм-PD3-(GPU)',  // Задание 6
     7: '#Задание-7.-Сравнение-быстродействия-DRAG-и-PD3',  // Задание 7
@@ -28,7 +28,7 @@ const taskAnchors = {
     11: '#Задание-11.-Сравнение-быстродействия-MERLIN-и-PALMAD'   // Задание 11
 };
 
-const baseUrl = 'https://nbviewer.org/github/KraevaYA/tutorial-notebook/blob/main/pct_tutorial_2026.ipynb';
+const baseUrl = 'https://nbviewer.org/github/KraevaYA/tutorial/blob/main/docs/materials/pct_tutorial_2026_solution.ipynb';
 
 function loadTask(taskNumber) {
     const iframe = document.getElementById('notebook-frame');
