@@ -49,14 +49,17 @@
                 <details class="task-block" style="border-left: 4px solid #4285f4; background: white; border-radius: 0 8px 8px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" open>
                     <summary class="block-header">
                         <span style="font-weight: 600; color: #4285f4;">Часть 1. Введение в задачу поиска аномалий</span>
-                        <span class="task-count">2&nbsp;задания</span>
+                        <span class="task-count">3&nbsp;задания</span>
                     </summary>
-                    <div class="block-buttons">
-                        <button class="task-btn" onclick="loadTask(1)">
-                            <span class="task-num">Задание&nbsp;1.</span> Загрузка и визуализация данных NYC Taxi
+                    <div class="task-vertical-list">
+                        <button class="task-btn-vertical" onclick="loadTask(1)">
+                            <span class="task-num">Задание&nbsp;1.</span> Подготовка GPU-среды выполнения
                         </button>
-                        <button class="task-btn" onclick="loadTask(2)">
-                            <span class="task-num">Задание&nbsp;2.</span> Поиск Top-5 диссонансов
+                        <button class="task-btn-vertical" onclick="loadTask(2)">
+                            <span class="task-num">Задание&nbsp;2.</span> Загрузка и визуализация ряда NYC Taxi
+                        </button>
+                        <button class="task-btn-vertical" onclick="loadTask(3)">
+                            <span class="task-num">Задание&nbsp;3.</span> Поиск Top-5 диссонансов
                         </button>
                     </div>
                 </details>
@@ -67,18 +70,18 @@
                         <span style="font-weight: 600; color: #ea4335;">Часть 2. Поиск диссонансов фиксированной длины</span>
                         <span class="task-count">4&nbsp;задания</span>
                     </summary>
-                    <div class="block-buttons">
-                        <button class="task-btn" onclick="loadTask(3)">
-                            <span class="task-num">Задание&nbsp;3.</span> Алгоритм DRAG (CPU)
+                    <div class="task-vertical-list">
+                        <button class="task-btn-vertical" onclick="loadTask(4)">
+                            <span class="task-num">Задание&nbsp;4.</span> Алгоритм DRAG (CPU)
                         </button>
-                        <button class="task-btn" onclick="loadTask(4)">
-                            <span class="task-num">Задание&nbsp;4.</span> Исследование влияния порога
+                        <button class="task-btn-vertical" onclick="loadTask(5)">
+                            <span class="task-num">Задание&nbsp;5.</span> Исследование влияния порога
                         </button>
-                        <button class="task-btn" onclick="loadTask(5)">
-                            <span class="task-num">Задание&nbsp;5.</span> Алгоритм PD3 (GPU)
+                        <button class="task-btn-vertical" onclick="loadTask(6)">
+                            <span class="task-num">Задание&nbsp;6.</span> Алгоритм PD3 (GPU)
                         </button>
-                        <button class="task-btn" onclick="loadTask(6)">
-                            <span class="task-num">Задание&nbsp;6.</span> Сравнение быстродействия DRAG и PD3
+                        <button class="task-btn-vertical" onclick="loadTask(7)">
+                            <span class="task-num">Задание&nbsp;7.</span> Сравнение быстродействия DRAG и PD3
                         </button>
                     </div>
                 </details>
@@ -87,17 +90,20 @@
                 <details class="task-block" style="border-left: 4px solid #34a853; background: white; border-radius: 0 8px 8px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
                     <summary class="block-header">
                         <span style="font-weight: 600; color: #34a853;">Часть 3. Поиск диссонансов произвольной длины</span>
-                        <span class="task-count">3&nbsp;задания</span>
+                        <span class="task-count">4&nbsp;задания</span>
                     </summary>
-                    <div class="block-buttons">
-                        <button class="task-btn" onclick="loadTask(7)">
-                            <span class="task-num">Задание&nbsp;7.</span> Алгоритм MERLIN (CPU)
+                    <div class="task-vertical-list">
+                        <button class="task-btn-vertical" onclick="loadTask(8)">
+                            <span class="task-num">Задание&nbsp;8.</span> Загрузка и визуализация данных NYC Taxi
                         </button>
-                        <button class="task-btn" onclick="loadTask(8)">
-                            <span class="task-num">Задание&nbsp;8.</span> Алгоритм PALMAD (GPU)
+                        <button class="task-btn-vertical" onclick="loadTask(9)">
+                            <span class="task-num">Задание&nbsp;9.</span> Алгоритм MERLIN (CPU)
                         </button>
-                        <button class="task-btn" onclick="loadTask(9)">
-                            <span class="task-num">Задание&nbsp;9.</span> Сравнение быстродействия MERLIN и PALMAD
+                        <button class="task-btn-vertical" onclick="loadTask(10)">
+                            <span class="task-num">Задание&nbsp;10.</span> Алгоритм PALMAD (GPU)
+                        </button>
+                        <button class="task-btn-vertical" onclick="loadTask(11)">
+                            <span class="task-num">Задание&nbsp;11.</span> Сравнение быстродействия MERLIN и PALMAD
                         </button>
                     </div>
                 </details>
@@ -126,7 +132,7 @@
                    class="btn btn-info" style="border: 1px solid grey; color: black;">
                    📑 Открыть на полный экран
                 </a>
-                <a href="assets/files/solved.ipynb" 
+                <a href="https://github.com/KraevaYA/tutorial-notebook/blob/main/pct_tutorial_2026.ipynb" 
                    class="btn btn-primary" 
                    download>
                    ⬇️ Скачать готовое решение
@@ -146,7 +152,7 @@
                 <a href="solution.html">Готовое решение</a>
             </div>
             <p>© 2026, Тьюториал на научной конференции «Параллельные вычислительные технологии (ПаВТ) 2026»</p>
-            <p>Все материалы доступны на <a href="https://github.com/username/pavt-tutorial-2026">GitHub</a></p>
+            <p>Все материалы доступны на <a href="https://github.com/KraevaYA/pct-tutorial-2026">GitHub</a></p>
         </div>
     </footer>
     

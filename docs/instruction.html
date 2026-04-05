@@ -52,7 +52,7 @@
                 <div class="card">
                     <div class="card-icon">💻</div>
                     <div class="card-title">Работа на локальном компьютере</div>
-                    <div class="card-desc">Требуется скачивание архива с материалами на странице <a href="./materials.html">"Материалы"</a> или клонирование <a href="">GitHub-репозитория</a>, а также наличие видеокарты NVIDIA с поддержкой CUDA и установленные драйверы.</div>
+                    <div class="card-desc">Требуется скачивание архива с материалами на странице <a href="./materials.html">"Материалы"</a> или клонирование <a href="https://github.com/KraevaYA/pct-tutorial-2026">GitHub-репозитория</a>, а также наличие видеокарты NVIDIA с поддержкой CUDA и установленные драйверы.</div>
                 </div>
             </div>
 
@@ -90,8 +90,8 @@
                                     <div class="variant-title">🔹 <strong>Вариант А.</strong> Временная сессия (без сохранения)</div>
                                     <div class="code-block">
                                         <pre><code id="code-temp-session"># Клонирование репозитория с материалами
-!git clone https://github.com/username/pavt-tutorial-2026.git
-%cd pavt-tutorial-2026
+!git clone https://github.com/KraevaYA/pct-tutorial-2026
+%cd pct-tutorial-2026
 
 # Установка зависимостей
 !pip install -r requirements.txt -q</code></pre>
@@ -109,12 +109,15 @@
                                 <div style="margin-bottom: 0px; margin-left: 16px;">
                                     <div class="variant-title">🔹 <strong>Вариант Б.</strong> С хранением на Google Drive (сохранение прогресса)</div>
                                     <div class="code-block">
-                                        <pre><code id="code-drive-session">from google.colab import drive
+                                        <pre><code id="code-drive-session"># Подключение Google Диска
+from google.colab import drive
 drive.mount('/content/drive')
 
-!git clone https://github.com/username/pavt-tutorial-2026.git /content/drive/MyDrive/pavt-tutorial
-%cd /content/drive/MyDrive/pavt-tutorial
+# Клонирование репозитория с материалами
+!git clone https://github.com/KraevaYA/pct-tutorial-2026 /content/drive/MyDrive/pct-tutorial-2026
+%cd /content/drive/MyDrive/pct-tutorial-2026
 
+# Установка зависимостей
 !pip install -r requirements.txt -q</code></pre>
                                         <button class="copy-btn" onclick="copyCode('code-drive-session')">
                                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -149,7 +152,7 @@ drive.mount('/content/drive')
                                 <div style="margin-bottom: 16px;">
                                     <div>🔹 <strong>Вариант А.</strong> Клонирование репозитория (через Git) с помощью команды в терминале:</div>
                                     <div class="code-block" style="margin-top: 6px;">
-                                        <pre><code id="code-git-clone">git clone https://github.com/username/pavt-tutorial-2026.git</code></pre>
+                                        <pre><code id="code-git-clone">git clone https://github.com/KraevaYA/pct-tutorial-2026</code></pre>
                                         <button class="copy-btn" onclick="copyCode('code-git-clone')">
                                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                                 <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
@@ -172,7 +175,7 @@ drive.mount('/content/drive')
                                 <strong>Шаг 2.</strong> Перейдите в папку проекта и настройте окружение, выполнив команды в терминале:
                             </div>
                             <div class="code-block">
-                                <pre><code id="code-local-setup">cd pavt-tutorial-2026             # переход в папку проекта
+                                <pre><code id="code-local-setup">cd pct-tutorial-2026             # переход в папку проекта
 python -m venv venv                # создание виртуального окружения
 source venv/bin/activate           # активация окружения (Linux/macOS)
 # venv\Scripts\activate            # активация окружения (Windows)
@@ -186,7 +189,7 @@ jupyter notebook                   # запуск Jupyter Notebook</code></pre>
                                     Копировать
                                 </button>
                             </div>
-                            <div class="step-text"><strong>Шаг 3.</strong> В открывшемся интерфейсе Jupyter выберите <code>notebooks/pavt-tutorial-2026.ipynb</code>.</div>
+                            <div class="step-text"><strong>Шаг 3.</strong> В открывшемся интерфейсе Jupyter выберите <code>notebooks/pct-tutorial-2026.ipynb</code>.</div>
                         </div>  
                     </details>
                 </div>
@@ -205,7 +208,7 @@ jupyter notebook                   # запуск Jupyter Notebook</code></pre>
                 <a href="solution.html">Готовое решение</a>
             </div>
             <p>© 2026, Тьюториал на научной конференции «Параллельные вычислительные технологии (ПаВТ) 2026»</p>
-            <p>Все материалы доступны на <a href="https://github.com/username/pavt-tutorial-2026">GitHub</a></p>
+            <p>Все материалы доступны на <a href="https://github.com/KraevaYA/pct-tutorial-2026">GitHub</a></p>
         </div>
     </footer>
     
